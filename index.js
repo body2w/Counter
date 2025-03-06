@@ -8,11 +8,18 @@ btn.addEventListener("click", function () {
   counter++;
   window.localStorage.setItem("count", counter);
   screen.innerHTML = counter;
+  btn.classList.toggle("clicked-btn");
+  setTimeout(function () {
+    btn.classList.toggle("clicked-btn");
+  }, 200);
 });
 
-// زر التصفير
 reset.addEventListener("click", function () {
   counter = 0;
   window.localStorage.setItem("count", counter);
   screen.innerHTML = counter;
+  reset.classList.toggle("clicked-btn");
+  setTimeout(function () {
+    reset.classList.toggle("clicked-btn");
+  }, 200);
 });
