@@ -40,6 +40,16 @@ body {
   border-radius: 50%;
   background-color: silver;
   cursor: pointer;
+  box-shadow: 3px 3px gray;
+  position: relative;
+}
+.btn::before {
+  content: "Count";
+  color: rgb(20, 7, 7);
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  left: 30%;
 }
 .reset {
   width: 25px;
@@ -47,4 +57,16 @@ body {
   border-radius: 50%;
   background-color: silver;
   cursor: pointer;
+  box-shadow: 3px 3px gray;
+  position: relative;
+  left: 10px;
+  bottom: 30px;
+}
+.reset::before {
+  content: "Reset";
+  color: rgb(20, 7, 7);
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  left: -50%;
 }
